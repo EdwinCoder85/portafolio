@@ -609,6 +609,9 @@ figure {
 .footer__item:nth-of-type(4) {
   --color: #161616;
 }
+.footer__item:nth-of-type(5) {
+  --color: #784ac8;
+}
 .footer__img {
   width: 28px;
 }
