@@ -1,7 +1,7 @@
 :root {
   scroll-behavior: smooth;
   --blue: linear-gradient(135deg, #0a92f4 0%, #303db3 100%);
-  --red: linear-gradient(to top, #69303e 0%, #f51111 100%);
+  --red: linear-gradient(to top, #e1093f 0%, #f51111 100%);
   --verde: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
   --dorado: linear-gradient(to top, #ecb019 0%, #dd9522 100%);
   --title: linear-gradient(to right, #f90000 0%, #ecab32e9 30%, #ffd000 100%);
@@ -18,6 +18,8 @@
   --bg-header: #1a1a1a9b;
   --bg-footer: #51515182;
   --bg-scrollbar: #535353cd;
+  --bg-button: linear-gradient(to right, #ff8008 0%, #ffc837 51%, #ff8008 100%);
+  --shadow-button: #ff8008;
   --transform-option: translate(100%);
   --color-switcher: var(--blue);
   --color-active: var(--blue);
@@ -30,10 +32,12 @@
   --text-title: var(--blue);
   --text-color: #111;
   --text-footer: #111;
-  --bg-color: #eaeaead9;
+  --bg-color: #fbfafa;
   --bg-header: transparent;
   --bg-footer: #d2d2d2;
   --bg-scrollbar: #d2d2d2d7;
+  --bg-button: linear-gradient(to right, #1fa2ff 0%, #12d8fa 51%, #1fa2ff 100%);
+  --shadow-button: #1fa2ff;
   --color-switcher: var(--dorado);
   --color-active: var(--dorado);
   --border-option: 10px solid #fff;
@@ -112,7 +116,7 @@ figure {
 }
 /************************ HEADER *********************/
 .header {
-  background: var(--bg-header) url("../assets/header.jpeg");
+  background: var(--bg-header) url("../assets/images/header.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -131,10 +135,11 @@ figure {
   font-size: 1.8rem;
 }
 .nav__theme::after {
-  margin-left: 1em;
+  /* margin-left: 1em; */
   content: var(--message-mode);
   display: block;
   font-size: 1.2rem;
+  font-weight: 500;
   text-align: center;
 }
 .nav__switcher {
@@ -205,7 +210,62 @@ figure {
   transform: translate(0);
   z-index: 100;
 }
+.nav__flags {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.flags__item {
+  width: 30px;
+}
+.flags__img {
+  display: block;
+  cursor: pointer;
+}
 /************************ ABOUT ************************/
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about__download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__link {
+  color: #fff;
+  padding: 1em 0.5em;
+  text-decoration: none;
+  justify-self: center;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.about__link--download {
+  background-image: var(--bg-button);
+  margin: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 5px var(--shadow-button), 0 0 15px var(--shadow-button);
+  border-radius: 10px;
+  display: block;
+}
+.about__link--download:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.about__link--icon {
+  color: #fff;
+  font-size: 1.5rem;
+  top: 20px;
+  margin-right: 0.2em;
+}
 .about__img {
   display: block;
   margin: 0 auto;
@@ -525,12 +585,12 @@ figure {
 .contact__main {
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 2em;
   margin-top: 2em;
 }
-.contact__main > * {
+/* .contact__main > * {
   padding: 1em;
-}
+} */
 .contact-form .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -544,19 +604,19 @@ figure {
 }
 .form-control {
   margin: 0;
-  padding: 1em;
+  padding: 0.7em;
   position: relative;
 }
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
   width: 100%;
-  padding: 0.7em;
+  /* padding: 2em; */
   border: none;
   background: none;
   outline: 0;
   color: var(--text-color);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   border-bottom: 1.5px solid var(--border-element);
 }
 .contact-form form button {
@@ -586,6 +646,9 @@ figure {
 }
 .contact-info li {
   margin-bottom: 10px;
+}
+.label--size-medium {
+  font-size: 1rem;
 }
 /************************ FOOTER ************************/
 .footer {
@@ -666,10 +729,7 @@ figure {
     color: white;
     text-shadow: 1px 0 5px black;
     font-weight: 700;
-    font-size: 1.2rem;
-  }
-  .nav__theme::after {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   /************************ HERO-MAIN ************************/
   .hero__main {
@@ -703,7 +763,7 @@ figure {
   }
   /************************ ABOUT ************************/
   .about__container {
-    flex-direction: row;
+    flex-direction: column;
   }
   .about__figure {
     width: 30%;
@@ -780,6 +840,9 @@ figure {
   .contact-info {
     width: 40%;
   }
+  .label--size-medium {
+    font-size: 0.9rem;
+  }
   /************************ FOOTER ************************/
   .footer {
     text-align: center;
@@ -798,7 +861,17 @@ figure {
     color: white;
     text-shadow: 1px 0 5px black;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  /************************ ABOUT ME ************************/
+  .about__container {
+    flex-direction: row;
+  }
+  .about__download {
+    width: 30%;
+  }
+  .about__texts {
+    width: 70%;
   }
   /************************ PROJECT ************************/
   .project__slider--subtitle {
@@ -808,6 +881,10 @@ figure {
   .project__slider--subtitle h4 {
     font-size: 35px;
     margin-bottom: 35px;
+  }
+  /************************ CONTACT ME ************************/
+  .label--size-medium {
+    font-size: 1rem;
   }
 }
 
@@ -827,7 +904,14 @@ figure {
     color: white;
     text-shadow: 1px 0 5px black;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  /************************ ABOUT ME ************************/
+  .about__download {
+    width: 25%;
+  }
+  .about__texts {
+    width: 75%;
   }
   /************************ PROJECT ************************/
   .project__slider--subtitle {
@@ -853,6 +937,9 @@ figure {
   .contact-info {
     width: 40%;
   }
+  .label--size-medium {
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -871,7 +958,14 @@ figure {
     color: white;
     text-shadow: 1px 0 5px black;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+  /************************ ABOUT ME ************************/
+  .about__download {
+    width: 25%;
+  }
+  .about__texts {
+    width: 75%;
   }
   /************************ PROJECT ************************/
   .project__slider--subtitle {
@@ -897,6 +991,9 @@ figure {
   .contact-info {
     width: 40%;
   }
+  .label--size-medium {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -915,7 +1012,14 @@ figure {
     color: white;
     text-shadow: 1px 0 5px black;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+  }
+  /************************ ABOUT ME ************************/
+  .about__download {
+    width: 20%;
+  }
+  .about__texts {
+    width: 80%;
   }
   /************************ PROJECT ************************/
   .project__slider--subtitle {
@@ -941,6 +1045,9 @@ figure {
   .contact-info {
     width: 40%;
   }
+  .label--size-medium {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -959,8 +1066,19 @@ figure {
     color: white;
     text-shadow: 1px 0 5px black;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
+  /************************ ABOUT ME ************************/
+  .about__container {
+    display: flex;
+    gap: 2rem;
+  }
+  /* .about__download {
+    width: 15%;
+  }
+  .about__texts {
+    width: 85%;
+  } */
   /************************ SKILL ************************/
   .skill__main {
     display: flex;
@@ -1020,5 +1138,9 @@ figure {
   }
   .contact-info li {
     margin-bottom: 10px;
+  }
+  .label--size-medium {
+    /* font-size: 1.4rem; */
+    font-size: 1.2rem;
   }
 }

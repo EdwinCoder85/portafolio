@@ -1,3 +1,4 @@
+/*********************************SHOW/HIDDEN MENU************************************/
 const menu = document.querySelector('.nav__menu');
 const menuList = document.querySelector('.nav__list');
 const links = document.querySelectorAll('.nav__link');
@@ -12,7 +13,7 @@ links.forEach(function(link){
   })
 })
 
-
+/*******************************SWITCH THEME**************************************/
 document.addEventListener('DOMContentLoaded', function() {
   const swictherTheme = document.querySelector('.nav__check');
   const root = document.documentElement;
@@ -35,3 +36,22 @@ const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matc
 const newTheme = storageTheme ?? systemColorScheme;
 
 document.documentElement.setAttribute('data-theme', newTheme);
+
+/*********************************CHANGE LANGUAGE************************************/
+const flagsElement = document.getElementById("nav__flags");
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async language => {
+  const requestJson = await fetch(`./languages/${language}.json`)
+  const texts = await requestJson.json();
+
+  for(const textToChange of textsToChange) {
+    const section = textToChange.dataset.section
+    const value = textToChange.dataset.value
+    textToChange.innerHTML = texts[section][value];
+  }
+}
+
+flagsElement.addEventListener("click", (e) => {
+  changeLanguage(e.target.parentElement.dataset.language);
+})
