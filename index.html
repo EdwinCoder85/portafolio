@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -17,19 +17,19 @@
       <nav class="nav container container--header">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#yo" class="nav__link">Acerca de Mi</a>
+            <a class="nav__link" href="#yo" data-section="header" data-value="option1">Acerca de mi</a>
           </li>
           <li class="nav__item">
-            <a href="#habilidades" class="nav__link">Habilidades</a>
+            <a class="nav__link" href="#habilidades" data-section="header" data-value="option2">Habilidades</a>
           </li>
           <li class="nav__item">
-            <a href="#proyectos" class="nav__link">Proyectos</a>
+            <a class="nav__link" href="#proyectos" data-section="header" data-value="option3">Proyectos</a>
           </li>
           <li class="nav__item">
-            <a href="#estudios" class="nav__link">Estudios</a>
+            <a class="nav__link" href="#estudios" data-section="header" data-value="option4">Estudios</a>
           </li>
           <li class="nav__item">
-            <a href="#contactame" class="nav__link">Contactame</a>
+            <a class="nav__link" href="#contactame" data-section="header" data-value="option5">Contactame</a>
           </li>
         </ul>
         <div class="nav__theme">
@@ -38,67 +38,81 @@
             <div class="nav__option"></div>
           </div>
         </div>
-        <img src="./assets/menu.svg" class="nav__menu" />
+        <div class="nav__flags" id="nav__flags">
+          <div class="flags__item" data-language="es">
+            <img class="flags__img" src="./assets/icons/es.svg" alt="" />
+          </div>
+          <div class="flags__item" data-language="en">
+            <img class="flags__img" src="./assets/icons/gb.svg" alt="" />
+          </div>
+        </div>
+        <img class="nav__menu" src="./assets/icons/menu.svg" />
       </nav>
     </header>
     <!-- /************************ MAIN ************************/ -->
     <main class="main">
       <!-- /************************ ABOUT ME ************************/ -->
-      <section class="about container" id="yo">
-        <div class="about__texts">
-          <h2 class="title highlight">Soy Edwin Amaranto
-            <!-- Hola, <span class="highlight">Soy Edwin Amaranto</span> -->
-          </h2>
-          <p class="paragraph paragraph--size-medium">Natural de la Ciudad de Chimbote, País de Perú; y egresado de la Universidad Nacional del Santa en donde me gradúe como Ingeniero de Sistemas e Informática, actualmente estudiante del Bootcamp de Academlo y amante de las tecnologías de la programación. Mis pasatiempos favoritos son: programar diariamente en lenguajes de frontend, salir a caminar, ver películas del género de acción, terror y ciencia ficción, ir al gimnasio por las tardes, investigar nuevas tecnologías en programación, leer libros de superación personal y educación financiera. Dentro de mis habilidades blandas me caracterizo por: tener alto sentido de la responsabilidad, tener ética laboral, trabajar en equipo y bajo presión, adquirir responsabilidades fácilmente, ser un joven profesional creativo, trabajar orientado a resultados, adaptarme con facilidad a cualquier puesto o función que me asignen, mantener adecuadas relaciones interpersonales en el entorno laboral. Asimismo, enfrentar a entornos de incertidumbre, y de toma de decisiones y adaptabilidad, además de capacidad de análisis, síntesis y organización.
-          </p>
-        </div>
+      <section class="about" id="yo">
+        <article class="about__container container container--about">
+          <div class="about__texts">
+            <h2 class="title highlight" data-section="about-me" data-value="title">Hola, Soy Edwin Amaranto
+              <!-- Hola, <span class="highlight">Soy Edwin Amaranto</span> -->
+            </h2>
+            <p class="paragraph paragraph--size-medium" data-section="about-me" data-value="description">Natural de la Ciudad de Chimbote, País de Perú; y egresado de la Universidad Nacional del Santa en donde me gradúe como Ingeniero de Sistemas e Informática, actualmente estudiante del Bootcamp de Academlo y amante de las tecnologías de la programación. Mis pasatiempos favoritos son: programar diariamente en lenguajes de frontend, salir a caminar, ver películas del género de acción, terror y ciencia ficción, ir al gimnasio por las tardes, investigar nuevas tecnologías en programación, leer libros de superación personal y educación financiera. Dentro de mis habilidades blandas me caracterizo por: tener alto sentido de la responsabilidad, tener ética laboral, trabajar en equipo y bajo presión, adquirir responsabilidades fácilmente, ser un joven profesional creativo, trabajar orientado a resultados, adaptarme con facilidad a cualquier puesto o función que me asignen, mantener adecuadas relaciones interpersonales en el entorno laboral. Asimismo, enfrentar a entornos de incertidumbre, y de toma de decisiones y adaptabilidad, además de capacidad de análisis, síntesis y organización.
+            </p>
+          </div>
+          <div class="about__download">
+            <a class="about__link about__link--download" href="https://drive.google.com/file/d/1tLndK_3PkGMq_YDxNjp0sjPYIDCdWs8m/view?usp=drive_link" target="_blank" data-section="about-me" data-value="curriculum"><i class='bx bx-book-bookmark about__link--icon'></i>Descarga mi curriculo</a>
+            <p></p>
+          </div>
+        </article>
       </section>
       <!-- /************************ SKILL ************************/ -->
       <section class="skill container" id="habilidades">
-      <h2 class="title">Habilidades</h2>
+      <h2 class="title" data-section="abilities" data-value="title">Habilidades</h2>
         <div class="skill__main">
           <article class="skill__article">
-            <h3 class="subtitle">TÉCNICAS</h3>
+            <h3 class="subtitle" data-section="abilities" data-value="subtitle1">Técnicas</h3>
               <section class="skill__grid">
                   <div class="skill__figure">
-                    <img class="skill__img" src="./assets/css-3.svg" alt="icon supervisor" >
+                    <img class="skill__img" src="./assets/images/css-3.svg" alt="icon supervisor" >
                   </div>
                   <div class="skill__figure">
-                    <img class="skill__img" src="./assets/html-5.svg" alt="icon supervisor" >
+                    <img class="skill__img" src="./assets/images/html-5.svg" alt="icon supervisor" >
                   </div>
                   <div class="skill__figure">
-                    <img class="skill__img" src="./assets/javascript.svg" alt="icon supervisor" >
+                    <img class="skill__img" src="./assets/images/javascript.svg" alt="icon supervisor" >
                   </div>
                   <div class="skill__figure">
-                    <img class="skill__img" src="./assets/react.svg" alt="icon supervisor" >
+                    <img class="skill__img" src="./assets/images/react.svg" alt="icon supervisor" >
                   </div>
                   <div class="skill__figure">
-                    <img class="skill__img" src="./assets/nodejs.svg" alt="icon supervisor" >
+                    <img class="skill__img" src="./assets/images/nodejs.svg" alt="icon supervisor" >
                   </div>
               </section>
           </article>
           <article class="skill__article">
-                <h3 class="subtitle">BLANDAS</h3>
+                <h3 class="subtitle" data-section="abilities" data-value="subtitle2">Blandas</h3>
                 <section class="skill__grid">
                   <div class="skill__figure">
-                    <img class="" src="./assets/adaptable.svg" alt="icon supervisor" >
-                    <h4 class="subtitle subtitle--centered">Adaptable</h4>
+                    <img class="" src="./assets/images/adaptable.svg" alt="icon supervisor" >
+                    <h4 class="subtitle subtitle--centered" data-section="abilities" data-value="ability1">Adaptable</h4>
                   </div>
                   <div class="skill__figure">
-                    <img class="" src="./assets/collaboration.svg" alt="icon supervisor" >
-                    <h4 class="subtitle subtitle--centered">Colaborador</h4>
+                    <img class="" src="./assets/images/collaboration.svg" alt="icon supervisor" >
+                    <h4 class="subtitle subtitle--centered" data-section="abilities" data-value="ability2">Colaborador</h4>
                   </div>
                   <div class="skill__figure">
-                    <img class="" src="./assets/creativity.svg" alt="icon supervisor" >
-                    <h4 class="subtitle subtitle--centered">Creativo</h4>
+                    <img class="" src="./assets/images/creativity.svg" alt="icon supervisor" >
+                    <h4 class="subtitle subtitle--centered" data-section="abilities" data-value="ability3">Creativo</h4>
                   </div>
                   <div class="skill__figure">
-                    <img class="" src="./assets/orientation_to_results.svg" alt="icon supervisor" >
-                    <h4 class="subtitle subtitle--centered">Orientado a resultados</h4>
+                    <img class="" src="./assets/images/orientation_to_results.svg" alt="icon supervisor" >
+                    <h4 class="subtitle subtitle--centered" data-section="abilities" data-value="ability4">Orientado a resultados</h4>
                   </div>
                   <div class="skill__figure">
-                    <img class="" src="./assets/focusing.svg" alt="icon supervisor" >
-                    <h4 class="subtitle subtitle--centered">Enfocado</h4>
+                    <img class="" src="./assets/images/focusing.svg" alt="icon supervisor" >
+                    <h4 class="subtitle subtitle--centered" data-section="abilities" data-value="ability5">Enfocado</h4>
                   </div>
                 </section>
           </article>
@@ -106,156 +120,156 @@
       </section>
       <!-- /************************ PORTAFOLIO ************************/ -->
       <section class="project container" id="proyectos">
-        <h2 class="title">Portafolio</h2>
-        <div class="project__slider">
+        <h2 class="title" data-section="projects" data-value="title">Portafolio</h2>
+        <article class="project__slider">
           <ul>
             <li>
-              <img src="./assets/project_06.jpg" alt="" >
+              <img src="./assets/images/project06.jpg" alt="" >
               <div class="project__slider--subtitle">
                 <h4>Ecommerce App</h4>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium ab quod atque sequi fuga repudiandae illum? Facilis, illum debitis harum ipsa optio voluptatibus temporibus nostrum tempore maiores ducimus deleniti.</p> -->
               </div>
             </li>
             <li>
-              <img src="./assets/project_05.jpg" alt="" >
+              <img src="./assets/images/project05.jpg" alt="" >
               <div class="project__slider--subtitle">
                 <h4>Pokedex App</h4>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium ab quod atque sequi fuga repudiandae illum? Facilis, illum debitis harum ipsa optio voluptatibus temporibus nostrum tempore maiores ducimus deleniti.</p> -->
               </div>
             </li>
             <li>
-              <img src="./assets/project_04.jpg" alt="" >
+              <img src="./assets/images/project04.jpg" alt="" >
               <div class="project__slider--subtitle">
                 <h4>Crud User App</h4>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium ab quod atque sequi fuga repudiandae illum? Facilis, illum debitis harum ipsa optio voluptatibus temporibus nostrum tempore maiores ducimus deleniti.</p> -->
               </div>
             </li>
             <li>
-              <img src="./assets/project_03.jpg" alt="" >
+              <img src="./assets/images/project03.jpg" alt="" >
               <div class="project__slider--subtitle">
                 <h4>Rick and Morty App</h4>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum omnis ea asperiores ab voluptatem, tempore vero reprehenderit nulla nihil repellendus veniam quo. Officiis illo optio ipsum assumenda alias? Quisquam.</p> -->
               </div>
             </li>
             <li>
-              <img src="./assets/project_02.jpg" alt="" >
+              <img src="./assets/images/project02.jpg" alt="" >
               <div class="project__slider--subtitle">
                 <h4>Weather App</h4>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cum corrupti esse. Repellendus nesciunt voluptate itaque molestias dicta, blanditiis placeat porro praesentium dignissimos ad sapiente similique et, tenetur inventore reiciendis!</p> -->
               </div>
             </li>
             <li>
-              <img src="./assets/project_01.jpg" alt="" >
+              <img src="./assets/images/project01.jpg" alt="" >
               <div class="project__slider--subtitle">
                 <h4>Fortune Cookie App</h4>
                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus amet beatae saepe alias ducimus consequatur natus illo ab iure accusamus officiis ipsam pariatur, illum dicta molestiae itaque hic esse fugit.</p> -->
               </div>
             </li>
           </ul>
-        </div>
-        <h3 class="subtitle">Proyectos principales</h3>
-        <div class="project__articles">
+        </article>
+        <h3 class="subtitle" data-section="projects" data-value="subtitle">Proyectos principales</h3>
+        <article class="project__articles">
           <article class="project__article">
             <h3 class="subtitle">E-COMMERCE APP</h3>
-            <p class="paragraph">
+            <p class="paragraph" data-section="projects" data-value="project6">
               Es una aplicación web desarrollada con front-end que permite mostrar el catálogo de productos disponibles, realizar compras, añadir al carrito de comprar, ver detalle del producto a seleccionar, así como iniciar y cerrar sesión a través de una API.
               Para la construcción del app se usaron librerías como: Axios, React Hook Form, React Router y React Redux.
             </p>
             <div class="project__links">
-              <a href="https://ecommerceapp-edwinamaranto.netlify.app/" class="project__link project__link--access" target="_blank"><i class='bx bxl-netlify project__link--icon'></i>Accede al App</a>
-              <a href="https://github.com/EdwinCoder85/EcommerceApp" class="project__link project__link--download" target="_blank"><i class='bx bxl-github project__link--icon' ></i>Descargar código</a>
+              <a href="https://ecommerceapp-edwinamaranto.netlify.app/" class="project__link project__link--access" target="_blank" data-section="projects" data-value="label1"><i class='bx bxl-netlify project__link--icon'></i>Accede al App</a>
+              <a href="https://github.com/EdwinCoder85/EcommerceApp" class="project__link project__link--download" target="_blank" data-section="projects" data-value="label2"><i class='bx bxl-github project__link--icon' ></i>Descargar código</a>
             </div>
           </article>
           <article class="project__article">
             <h3 class="subtitle">POKEDEX APP</h3>
-            <p class="paragraph">
+            <p class="paragraph" data-section="projects" data-value="project5">
               Es una aplicación web desarrollada con front-end que permite buscar al Pokémon por categoría y por nombre, ver la información detallada de nuestro pokemon buscado a través de una API.
               Para la construcción del app se usaron librerías como: Axios, React Router y React Redux.
             </p>
             <div class="project__links">
-              <a href="https://pokedexapp-edwinamaranto.netlify.app/" class="project__link project__link--access" target="_blank"><i class='bx bxl-netlify project__link--icon'></i>Accede al App</a>
-              <a href="https://github.com/EdwinCoder85/PokedexApp" class="project__link project__link--download" target="_blank"><i class='bx bxl-github project__link--icon' ></i>Descargar código</a>
+              <a href="https://pokedexapp-edwinamaranto.netlify.app/" class="project__link project__link--access" target="_blank" data-section="projects" data-value="label1"><i class='bx bxl-netlify project__link--icon'></i>Accede al App</a>
+              <a href="https://github.com/EdwinCoder85/PokedexApp" class="project__link project__link--download" target="_blank" data-section="projects" data-value="label2"><i class='bx bxl-github project__link--icon' ></i>Descargar código</a>
             </div>
           </article>
           <article class="project__article">
             <h3 class="subtitle">CRUD USERS APP</h3>
-            <p class="paragraph">
+            <p class="paragraph" data-section="projects" data-value="project4">
               Una aplicación web desarrollada con front-end que permite crear, eliminar y modificar usuarios a través de una API, a través de todos los métodos http.
               Para la construcción del app se uso la librería como: Axios y React Hook Form.
             </p>
             <div class="project__links">
-              <a href="https://cruduserapp-edwinamaranto.netlify.app/" class="project__link project__link--access" target="_blank"><i class='bx bxl-netlify project__link--icon'></i>Accede al App</a>
-              <a href="https://github.com/EdwinCoder85/CrudUserApp" class="project__link project__link--download" target="_blank"><i class='bx bxl-github project__link--icon' ></i>Descargar código</a>
+              <a href="https://cruduserapp-edwinamaranto.netlify.app/" class="project__link project__link--access" target="_blank" data-section="projects" data-value="label1"><i class='bx bxl-netlify project__link--icon'></i>Accede al App</a>
+              <a href="https://github.com/EdwinCoder85/CrudUserApp" class="project__link project__link--download" target="_blank" data-section="projects" data-value="label2"><i class='bx bxl-github project__link--icon' ></i>Descargar código</a>
             </div>
           </article>
-        </div>
+        </article>
       </section>
       <!-- /************************ STUDY ************************/ -->
       <section class="study container" id="estudios">
-        <h2 class="title">Estudios</h2>
+        <h2 class="title" data-section="studies" data-value="title">Estudios</h2>
         <div class="study__main">
           <article class="study__texts">
-            <h3 class="subtitle">GRADOS ACADÉMICOS</h3>
+            <h3 class="subtitle" data-section="studies" data-value="subtitle1">Grados Académicos</h3>
             <ul class="study__list">
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Egresado de la Maestria en Gestión de Tecnologías de la Información</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study1">Egresado de la Maestria en Gestión de Tecnologías de la Información</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Ingeniero de Sistemas e Informática</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study2">Ingeniero de Sistemas e Informática</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Bachiller en Ingeniería de Sistemas e Informática</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study3">Bachiller en Ingeniería de Sistemas e Informática</p>
               </li>
             </ul>
           </article>
           <article class="study__texts">
-            <h3 class="subtitle">DIPLOMADOS Y CURSOS</h3>
+            <h3 class="subtitle" data-section="studies" data-value="subtitle2">Diplomados y Cursos</h3>
             <ul class="study__list">
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Diplomado en “Gerencia de Proyectos”</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study4">Diplomado en “Gerencia de Proyectos”</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Diplomado en “Gestión de Base de Datos”</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study5">Diplomado en “Gestión de Base de Datos”</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Curso en “Design Thinking”</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study6">Curso en “Design Thinking”</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Curso en “Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean”</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study7">Curso en “Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean”</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Curso en “Administración de BD en Oracle”</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study8">Curso en “Administración de BD en Oracle”</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Curso en “PowerBuilder Enterprise v2017”</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study9">Curso en “PowerBuilder Enterprise v2017”</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Curso en “Desarrollador de Aplicaciones Web"</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study10">Curso en “Desarrollador de Aplicaciones Web"</p>
               </li>
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Curso en “Desarrollo de Soluciones Windows con C#”</p>
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study11">Curso en “Desarrollo de Soluciones Windows con C#”</p>
               </li>
             </ul>
           </article>
           <article class="study__texts">
-            <h3 class="subtitle">BOOTCAMP</h3>
+            <h3 class="subtitle" data-section="studies" data-value="subtitle3">BootCamp</h3>
             <ul class="study__list">
               <li class="study__item">
                 <span class="icon"><i class='bx bx-book-bookmark'></i></span>
-                <p class="paragraph paragraph--size-medium">Academlo
+                <p class="paragraph paragraph--size-medium" data-section="studies" data-value="study12">Academlo
                   <figure class="study__figure">
-                    <img src="./assets/academlo.jpg" class="study__img" />
+                    <img src="./assets/icons/academlo.png" class="study__img" />
                   </figure></p>
               </li>
             </ul>
@@ -264,37 +278,37 @@
       </section>
       <!-- /************************ CONTACT ME ************************/ -->
       <section class="contactme container" id="contactame">
-        <h2 class="title">Contactame</h2>
+        <h2 class="title" data-section="contact-me" data-value="title">Contactame</h2>
         <div class="contact__main">
           <article class="contact-form">
             <form action="https://formsubmit.co/edwinamarantovillegas@gmail.com" method="POST" id="form" class="form">
               <div class="form-control">
-                <label class="subtitle" for="fullname">Nombre y Apellido</label>
+                <label class="subtitle label--size-medium" for="fullname" data-section="contact-me" data-value="label1">Nombre y Apellido</label>
                 <input type="text" name="fullname" id="fullname" placeholder="" required>
                 <small></small>
               </div>
               <div class="form-control">
-                <label class="subtitle" for="email">Dirección de Correo</label>
+                <label class="subtitle label--size-medium" for="email" data-section="contact-me" data-value="label2">Correo electrónico</label>
                 <input type="email" name="email" id="email" placeholder="" required>
                 <small></small>
               </div>
               <div class="form-control">
-                <label class="subtitle" for="phone">Número de Celular</label>
+                <label class="subtitle label--size-medium" for="phone" data-section="contact-me" data-value="label3">Número de Celular</label>
                 <input type="tel" name="phone" id="phone" placeholder="" required>
                 <small></small>
               </div>
               <div class="form-control">
-                <label class="subtitle" for="affair">Asunto</label>
+                <label class="subtitle label--size-medium" for="affair" data-section="contact-me" data-value="label4">Asunto</label>
                 <input type="text" name="affair" id="affair" placeholder="" required>
                 <small></small>
               </div>
               <div class="form-control block">
-                <label class="subtitle">Mensaje</label> 
+                <label class="subtitle label--size-medium" data-section="contact-me" data-value="label5">Mensaje</label> 
                 <textarea name="message" rows="3" cols="2" id="message" placeholder="" required></textarea>
                 <small></small>
               </div>
               <div class="form-control block">
-                <button class="subtitle">Enviar</button>
+                <button class="subtitle" data-section="contact-me" data-value="label6">Enviar</button>
               </div>
               <div>
                 <input type="hidden" name="_next" value="http://127.0.0.7:5500/">
@@ -303,13 +317,13 @@
             </form>
           </article>
           <article class="contact-info">
-            <h4 class="subtitle">Más Información</h4>
+            <h4 class="subtitle label--size-medium" data-section="contact-me" data-value="subtitle">Más Información</h4>
             <ul>
-              <li><i class='bx bx-map-pin' ></i> Chimbote, Ancash, Perú</li>
-              <li><i class='bx bx-phone'></i> (+51) 954 647 683</li>
-              <li><i class='bx bx-envelope'></i> edwinamarantovillegas@gmail.com</li>
+              <li data-section="contact-me" data-value="label7"><i class='bx bx-map-pin'></i> Chimbote, Ancash, Perú</li>
+              <li data-section="contact-me" data-value="label8"><i class='bx bx-phone'></i> (+51) 954 647 683</li>
+              <li data-section="contact-me" data-value="label9"><i class='bx bx-envelope'></i> edwinamarantovillegas@gmail.com</li>
             </ul>
-            <p>También comunicame o contactame a través de mis redes sociales.</p>
+            <p data-section="contact-me" data-value="paragraph">También comunicame o contactame a través de mis redes sociales.</p>
           </article>
         </div>
       </section>
@@ -321,27 +335,27 @@
         <ul class="footer__contact">
           <li class="footer__item">
             <a href="https://www.linkedin.com/in/edwin-agemiler-amaranto-villegas-3ba291128/" class="footer__link" target="_blank">
-              <img class="footer__img" src="./assets/linkedin.svg" title="Linkedin"/>
+              <img class="footer__img" src="./assets/icons/linkedin.svg" title="Linkedin"/>
             </a>
           </li>
           <li class="footer__item">
             <a href="https://w.app/edwinamaranto" class="footer__link" target="_blank">
-              <img class="footer__img"src="./assets/whatsapp.svg" title="Whatsapp"/>
+              <img class="footer__img" src="./assets/icons/whatsapp.svg" title="Whatsapp"/>
             </a>
           </li>
           <li class="footer__item">
             <a href="https://t.me/edwinamaranto" class="footer__link" target="_blank">
-              <img class="footer__img"src="./assets/telegram.svg" title="Telegram"/>
+              <img class="footer__img" src="./assets/icons/telegram.svg" title="Telegram"/>
             </a>
           </li>
           <li class="footer__item">
             <a href="https://github.com/EdwinCoder85" class="footer__link" target="_blank">
-              <img class="footer__img"src="./assets/github.svg" title="Github"/>
+              <img class="footer__img" src="./assets/icons/github.svg" title="Github"/>
             </a>
           </li>
           <li class="footer__item">
             <a href="https://gitlab.com/EAMARANTO" class="footer__link" target="_blank">
-              <img class="footer__img"src="./assets/gitlab.svg" title="Gitlab"/>
+              <img class="footer__img" src="./assets/icons/gitlab.svg" title="Gitlab"/>
             </a>
           </li>
         </ul>

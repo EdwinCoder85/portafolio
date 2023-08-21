@@ -1,0 +1,99 @@
+{
+  "header": {
+    "option1": "About me",
+    "option2": "Abilities",
+    "option3": "Projects",
+    "option4": "Studies",
+    "option5": "Contact me"
+  },
+  "about-me": {
+    "title": "Hello, I'm Edwin Amaranto",
+    "rol": "Front-end Developer",
+    "description": "Natural of the City of Chimbote, Country of Peru; and graduated from the National University of Santa where he graduated as a Systems and Computer Engineer, currently a student of the Academlo Bootcamp and lover of programming technologies. My favorite hobbies are: daily programming in frontend languages, going for a walk, watching action, horror and sci-fi movies, going to the gym in the evenings, researching new programming technologies, reading self-improvement and financial education books. Within my soft skills I am characterized by: having a high sense of responsibility, having a work ethic, working in a team and under pressure, easily acquiring responsibilities, being a creative young professional, working results-oriented, easily adapting to any position or role assigned to me, maintain adequate interpersonal relationships in the work environment. Likewise, facing environments of uncertainty, and decision-making and adaptability, as well as the capacity for analysis, synthesis and organization.",
+    "curriculum": "Download my resume"
+  },
+  "abilities": {
+    "title": "Abilities",
+    "type1": "Techniques",
+    "type2": "Soft",
+    "ability1": "Adaptable",
+    "ability2": "Collaborator",
+    "ability3": "Creative",
+    "ability4": "Results oriented",
+    "ability5": "In focus"
+  },
+  "projects": {
+    "title": "Briefcase",
+    "slider": {
+      "project1": "Fortune Cookie App",
+      "project2": "Weather App",
+      "project3": "Rick and Morty App",
+      "project4": "Crud User App",
+      "project5": "Pokedex App",
+      "project6": "Ecommerce App"
+    },
+    "main": {
+      "subtitle": "Main Projects",
+      "description": {
+        "project6": "It is a web application developed with a front-end that allows you to display the catalog of available products, make purchases, add to the shopping cart, see details of the product to select, as well as log in and out through an API. For the construction of the app, libraries such as: Axios, React Hook Form, React Router and React Redux were used.",
+        "project5": "It is a web application developed with a front-end that allows you to search for the Pokémon by category and by name, see the detailed information of our searched pokemon through an API. For the construction of the app, libraries such as: Axios, React Router and React Redux were used.",
+        "project4": "A web application developed with front-end that allows to create, delete and modify users through an API, through all http methods. For the construction of the app, the library was used as: Axios and React Hook Form."
+      }
+    }
+  },
+  "studies": {
+    "title": "Studies",
+    "type1": {
+      "subtitle": "Degrees academics",
+      "items": {
+        "item1": "Graduated from the Master's in Information Technology Management",
+        "item2": "Systems and IT Engineer",
+        "item3": "Bachelor of Systems Engineering and Informatics"
+      }
+    },
+    "type2": {
+      "subtitle": "Diplomas and Courses",
+      "items": {
+        "item1": "Diploma in Project Management",
+        "item2": "Diploma in Database Management",
+        "item3": "Course in Design Thinking",
+        "item4": "Course in Project Management with Agile Methodologies and Lean Approaches",
+        "item5": "Oracle Database Administration Course",
+        "item6": "Course on PowerBuilder Enterprise v2017",
+        "item7": "Web Application Developer Course",
+        "item8": "Course in Windows Solution Development with C#"
+      }
+    },
+    "type3": {
+      "subtitle": "BootCamp",
+      "items": {
+        "item1": "Academlo"
+      }
+    }
+  },
+  "contact-me": {
+    "title": "Contact Me",
+    "form": {
+      "labels": {
+        "label1": "Name and surname",
+        "label2": "Mail address",
+        "label3": "Cell phone number",
+        "label4": "Affair",
+        "label5": "Message",
+        "label6": "Send"
+      }
+    },
+    "information": {
+      "subtitle": "More information",
+      "items": {
+        "item1": "Chimbote, Ancash, Perú",
+        "item2": "(+51) 954 647 683",
+        "item3": "edwinamarantovillegas@gmail.com"
+      },
+      "paragraph": "Also communicate or contact me through my social networks."
+    }
+  },
+  "footer": {
+    "title": "Social Networks"
+  }
+}
