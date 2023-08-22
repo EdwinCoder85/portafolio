@@ -8,8 +8,7 @@
   --error-color: #e74c3c;
 }
 :root[data-theme="dark"] {
-  --title-main: linear-gradient(to right, #ff0000 0%, #ffd000 100%);
-  /* --title-main: linear-gradient(to right, #ff8008 0%, #ffc837 51%, #ff8008 100%); */
+  --main-title: linear-gradient(to right, #ff0000 0%, #ffd000 100%);
   --message-mode: "Dark Mode";
   --modo-theme: darken;
   --text-title: var(--dorado);
@@ -28,8 +27,7 @@
   --border-element: #daa520;
 }
 :root[data-theme="light"] {
-  --title-main: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-  /* --title-main: linear-gradient(to right, #1fa2ff 0%, #12d8fa 51%, #1fa2ff 100%); */
+  --main-title: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
   --message-mode: "Light Mode";
   --modo-theme: lighten;
   --text-title: var(--blue);
@@ -122,6 +120,7 @@ figure {
 .title__main {
   font-size: 3rem;
   font-weight: 900;
+  margin-bottom: 0.2em;
 }
 .title {
   text-align: center;
@@ -135,9 +134,12 @@ figure {
 .title--align {
   text-align: center;
 }
+.title--weight {
+  font-weight: 900;
+}
 .title--highlight {
   text-transform: uppercase;
-  background: var(--title-main);
+  background: var(--main-title);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -920,7 +922,7 @@ figure {
 @media (min-width: 950px) {
   /************************ GENERALITIES ************************/
   .title__main {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .title {
     font-size: 2.2rem;
@@ -1011,7 +1013,7 @@ figure {
 @media (min-width: 1024px) {
   /************************ GENERALITIES ************************/
   .title__main {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .title {
     font-size: 2.3rem;

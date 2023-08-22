@@ -7,8 +7,9 @@
     "option5": "Contactame"
   },
   "about-me": {
-    "title": "Hola, Soy Edwin Amaranto",
-    "rol": "Desarrollador Front-end",
+    "main-title": "Hola, Soy Edwin Amaranto",
+    "title": "Acerca de mi",
+    "rol": "Tu Desarrollador Frontend",
     "description": "Natural de la Ciudad de Chimbote, País de Perú; y egresado de la Universidad Nacional del Santa en donde me gradúe como Ingeniero de Sistemas e Informática, actualmente estudiante del Bootcamp de Academlo y amante de las tecnologías de la programación. Mis pasatiempos favoritos son: programar diariamente en lenguajes de frontend, salir a caminar, ver películas del género de acción, terror y ciencia ficción, ir al gimnasio por las tardes, investigar nuevas tecnologías en programación, leer libros de superación personal y educación financiera. Dentro de mis habilidades blandas me caracterizo por: tener alto sentido de la responsabilidad, tener ética laboral, trabajar en equipo y bajo presión, adquirir responsabilidades fácilmente, ser un joven profesional creativo, trabajar orientado a resultados, adaptarme con facilidad a cualquier puesto o función que me asignen, mantener adecuadas relaciones interpersonales en el entorno laboral. Asimismo, enfrentar a entornos de incertidumbre, y de toma de decisiones y adaptabilidad, además de capacidad de análisis, síntesis y organización.",
     "curriculum": "Descarga mi curriculo"
   },

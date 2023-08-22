@@ -7,8 +7,9 @@
     "option5": "Contact me"
   },
   "about-me": {
-    "title": "Hello, I'm Edwin Amaranto",
-    "rol": "Front-end Developer",
+    "main-title": "Hello, I'm Edwin Amaranto",
+    "title": "About me",
+    "rol": "Your Frontend Developer",
     "description": "Natural of the City of Chimbote, Country of Peru; and graduated from the National University of Santa where he graduated as a Systems and Computer Engineer, currently a student of the Academlo Bootcamp and lover of programming technologies. My favorite hobbies are: daily programming in frontend languages, going for a walk, watching action, horror and sci-fi movies, going to the gym in the evenings, researching new programming technologies, reading self-improvement and financial education books. Within my soft skills I am characterized by: having a high sense of responsibility, having a work ethic, working in a team and under pressure, easily acquiring responsibilities, being a creative young professional, working results-oriented, easily adapting to any position or role assigned to me, maintain adequate interpersonal relationships in the work environment. Likewise, facing environments of uncertainty, and decision-making and adaptability, as well as the capacity for analysis, synthesis and organization.",
     "curriculum": "Download my resume"
   },
@@ -23,7 +24,7 @@
     "ability5": "In focus"
   },
   "projects": {
-    "title": "Briefcase",
+    "title": "Projects",
     "subtitle": "Main Projects",
     "project6": "It is a web application developed with a front-end that allows you to display the catalog of available products, make purchases, add to the shopping cart, see details of the product to select, as well as log in and out through an API. For the construction of the app, libraries such as: Axios, React Hook Form, React Router and React Redux were used.",
     "project5": "It is a web application developed with a front-end that allows you to search for the Pokémon by category and by name, see the detailed information of our searched pokemon through an API. For the construction of the app, libraries such as: Axios, React Router and React Redux were used.",
